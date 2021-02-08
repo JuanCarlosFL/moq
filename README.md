@@ -26,7 +26,7 @@ If we need to configure a Mock Object Method to return a value
 mockValidator.Setup(x => x.Method("value").Returns("We want to return");
 ```
 
-If we want to accpet any value we can use:
+- We want to accept any value, range, etc.
 
 ```C#
 mockValidator.Setup(x => x.Method(it.IsAny<string>())).Returns(true)
